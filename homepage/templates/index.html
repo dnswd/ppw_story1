@@ -1,44 +1,119 @@
 <!DOCTYPE html>
+<html lang="en">
+
 {% load static %}
-<htm>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="My Profile Website">
-  <meta name="author" content="Dennis Walangadi">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Dennis Walangadi | Profile</title>
+  <title>Dennis Walangadi</title>
+  <meta name="description" content="Hell yeah that's me!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="About me">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dennis Walangadi">
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="{% static 'images/man.svg' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/31c83bd84a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav">
+          <a class="header-logo toggle-dark-mode" title="Dennis Walangadi">Dennis Walangadi</a>
+        </nav>
 
-  <h1>Dennis Al Baihaqi Walangadi</h1>
-  <h3>1906400141 - Dennis - Maung 2019</h3>
-  <br>
-  <p>
-    Hi! My name is Dennis!<br>
-    I'm a Computer Science student from Universitas Indonesia. I love programming exploring open sourced projects!
-  </p>
+        <div class="about">
+          <img class="avatar inverted" src="{% static 'images/me.jpg' %}" alt="My Face" title="Hell yeah that's me!">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>: </th>
+              <td>Dennis Al Baihaqi Walangadi</td>
+            </tr>
+            <tr>
+              <th>Occupation</th>
+              <th>: </th>
+              <td>Student @ <a href="https://www.cs.ui.ac.id/" target="_blank">Fasilkom, Universitas Indonesia</a></td>
+            </tr>
+            <tr>
+              <th>NPM</th>
+              <th>: </th>
+              <td><code>1906400141</code></td>
+            </tr>
+            <tr>
+              <th>Batch</th>
+              <th>: </th>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th>Hobby</th>
+              <th>: </th>
+              <td>Code, YouTube, Surf the Internet</td>
+            </tr>
 
-  <table>
-    <tr>
-      <td>Hobby</td>
-    </tr>
-    <tr>
-      <td>Education</td>
-    </tr>
-  </table>
-    
+          </table>
+          <h1>Short Bio</h1>
+          <p>
+            I aim to be a full-stack developer. I love exploring open-source projects on Github. I'm trying to learn web
+            dev lately. Mostly Django, Deno, Next.js, and Node.js. <br>
+            I also love to cook! I usually cook garlic bread, my favorite comfort food.
+          </p>
 
-  <h2></h2>
-  <script src="static/js/scripts.js"></script>
+          <h1>Education Timeline</h1>
+          <div id="timeline-content">
+            <ul class="timeline">
+              <li class="event">
+                <h3>Faculty of Computer Science, University of Indonesia</h3>
+                <p>2019 — Now</p>
+              </li>
+              <li class="event">
+                <h3>Muhammadiyah 4 Highschool</h3>
+                <p>2015 — 2018</p>
+              </li>
+              <li class="event">
+                <h3>Maria Immaculata Marsudirini Junior Highschool</h3>
+                <p>2012 — 2015</p>
+              </li>
+              <li class="event">
+                <h3>Cawang 01 Public Elementary School</h3>
+                <p>2006 — 2012</p>
+              </li>
+            </ul>
+          </div>
+
+          <h3 style="text-align: center;">Reach Me Out!</h3>
+          <ul class="header-links">
+            <li><a target="_blank" title="GitHub" href="https://github.com/dnswd"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/denniswd/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a target="_blank" title="Twitter" href="https://twitter.com/dnnswd"><i class="fab fa-twitter"></i></a></li>
+            <li><a target="_blank" title="Instagram" href="https://www.instagram.com/denniswalangadi/"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank" title="Line Messenger" href="https://line.me/R/ti/p/dennisaw2000"><i class="fab fa-line"></i></a></li>
+            <li><a target="_blank" title="Email" href="mailto:dennis.al@ui.ac.id"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+
+        </div>
+
+        <footer class="footer">
+          <p>
+            © 2020 Dennis A. Walangadi
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+  </main>
+
 </body>
+
 </html>
