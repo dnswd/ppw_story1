@@ -1190,6 +1190,10 @@ img {
     }
 }
 
+tbody {
+    vertical-align: baseline;
+}
+
 #timeline-content {
     margin-left: 50px;
 }
@@ -1247,7 +1251,7 @@ img {
     height: 7px;
     width: 7px;
     content: "";
-    top: 13gitpx;
+    top: 13px;
 }
 
 .toggle-dark-mode {
