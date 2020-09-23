@@ -42,7 +42,7 @@ jobs:
           # Email that you use with heroku
           heroku_email: dennisaw2000@gmail.com
           # The appname to use for deploying/updating
-          heroku_app_name: story1-ppw-dennis
+          heroku_app_name: story1-dennis
           # An optional buildpack to use when creating the heroku application
           # buildpack: Python
           # The branch that you would like to deploy to Heroku
